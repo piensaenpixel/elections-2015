@@ -35,7 +35,7 @@
           "updated_at": "2016-02-23T07:56:47+00:00",
 
           "widgets": [
-{
+          {
               "id": "partido-category",
               "type": "category",
               "title": "Partidos",
@@ -149,6 +149,7 @@
 "layers": [
 {
 "options": {
+"vector": true,
 "type": "Plain",
 "base_type": "plain",
 "className": "plain",
@@ -196,7 +197,7 @@
 "tooltip": {
 "fields": [],
 "template_name": "tooltip_light",
-"template": "<div class=\"cartodb-tooltip-content-wrapper\">\n  <div class=\"cartodb-tooltip-content\">\n  {{#fields}}\n    {{#title}}\n    <h4>{{title}}</h4>\n    {{/title}}\n    <p>{{{ value }}}</p>\n  {{/fields}}\n  </div>\n</div>",
+"template": "<div class=\"CDB-Tooltip-wrapper\">\n<div class=\"CDB-Tooltip CDB-Tooltip--isLight\">\n<ul class=\"CDB-Tooltip-list\">\n{{#fields}}\n<li class=\"CDB-Tooltip-listItem\">\n{{#title}}\n<h3 class=\"CDB-Tooltip-listTitle\">\n{title}}\n</h3>\n{{/title}}\n<h4 class=\"CDB-Tooltip-listText\">\n{{{ value }}}\n</h4>\n</div>",
 "alternative_names": {},
 "maxHeight": 180
 },
@@ -534,7 +535,7 @@
 }
 ],
 "template_name": "",
-"template": "<div class=\"cartodb-tooltip-content-wrapper\">\n  <div class=\"cartodb-tooltip-content\">\n    <p><strong>{{nombre}}</strong></p>\n    <h4><strong>Partido Ganador</strong></h4>\n    <p>{{partido_ganador_2015}} - {{porcentaje_ganador}}%</p>\n  </div>\n</div>",
+"template": "<div class=\"CDB-Tooltip CDB-Tooltip--isLight\">\n<ul class=\"CDB-Tooltip-list\">\n<li class=\"CDB-Tooltip-listItem\">\n<h3 class=\"CDB-Tooltip-listTitle\">\n{{nombre}}\n</h3>\n<h4 class=\"CDB-Tooltip-listText\">\n{{partido_ganador_2015}} - {{porcentaje_ganador}}%\n</h4>\n</li>\n</ul></div>",
 "alternative_names": {},
 "maxHeight": 180
 },
